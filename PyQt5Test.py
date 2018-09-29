@@ -4,7 +4,7 @@
 试着一边学习一边开发桌面应用
 
 作者：Lynn Lin
-最后一次编辑：2018/9/17
+最后一次编辑：2018/9/1711111111111
 """
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QToolTip, QPushButton, QMessageBox, QDesktopWidget
