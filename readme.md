@@ -4,10 +4,10 @@
 
 ## button大体思路
 
-    - 需要用到的插件：tkin、exwrite、exread、time获取时间差
-    - 15分钟一个单元，每个动作都是通过桌面右边的button进行操作
+- 需要用到的插件：tkin、exwrite、exread、time获取时间差
+- 15分钟一个单元，每个动作都是通过桌面右边的button进行操作
     > 通过button进行时间存储，通过exwrite进行增量的添加时间表到excel中。  
-    __excel形式成功后切换为数据库-MySQL__
+__excel形式成功后切换为数据库-MySQL__
 
 ### python学习-tkiner桌面应用
 
@@ -17,28 +17,28 @@
 
 #### 问题解决
 
-    - VS code中PyQt报错问题:<https://www.jianshu.com/p/73d41faaf469>
+- VS code中PyQt报错问题:<https://www.jianshu.com/p/73d41faaf469>
 
 - 界面只有6个button 和 汇报按钮
 
 ### 汇报功能
 
-    - 需要用到的模块：pyecharts
-    - 对excel数据进行读取和处理后通过pyecharts以网页形式展示
+- 需要用到的模块：pyecharts
+- 对excel数据进行读取和处理后通过pyecharts以网页形式展示
     > 形式：柱状图:Bar 每个类型总时间  
-        饼图（类型之间的比例）  Pie
-        日历热力图：HeatMap  
-        每日时间轴对比:Bar 变形
-        分析工作专注度：Liquid
-        最佳工作时间：Pie(每日的指定时间的工作专注度)
-        最佳工作时间：Polar
+饼图（类型之间的比例）  Pie
+日历热力图：HeatMap  
+每日时间轴对比:Bar 变形
+分析工作专注度：Liquid
+最佳工作时间：Pie(每日的指定时间的工作专注度)
+最佳工作时间：Polar
 
 ### 后期加入探索
 
-    - 提醒任务，短信、桌面、app提示推送
-    - 日历对应时间轴
-    - 任务对应时间轴进行效率计算
-    - 监控动作（需要获取桌面句柄得到当前做的事情）
+- 提醒任务，短信、桌面、app提示推送
+- 日历对应时间轴
+- 任务对应时间轴进行效率计算
+- 监控动作（需要获取桌面句柄得到当前做的事情）
 
 ## python 做app----时间管理软件
 
