@@ -4,44 +4,43 @@
 试着一边学习一边开发桌面应用
 
 作者：Lynn Lin
-最后一次编辑：2018/9/1711111111111
+最后一次编辑：2018/9/29
 """
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QToolTip, QPushButton, QMessageBox, QDesktopWidget
+from PyQt5.QtWidgets import *
+from MyMessageBox import MessageBox
 
 
-class Example(QMainWindow):
-    def __init__(self):
-        super().__init__()
+class Example(QWidget):
+    # close_signal = pyqtSignal()
+
+    def __init__(self, parent=None):
+        super(Example, self).__init__(parent)
         self.initUI()
 
     def initUI(self):
-        self.setToolTip('this is <b>QMainWindow</b>')
+        # self.setToolTip('this is <b>QWidget</b>')
+
+        btn = QPushButton('Strat', self)
+        btn.resize(btn.sizeHint())
+
+        qbtn = QPushButton('Quit', self)
+        qbtn.resize(qbtn.sizeHint())
 
         # 按钮提示框
-        btn = QPushButton('Button', self)
-        btn.setToolTip('this is <b>QPushButton</b>')
-        btn.resize(btn.sizeHint())
-        btn.move(50, 50)
+        btn.setToolTip('Start the time')
 
-        # 信号与槽
-        qbtn = QPushButton('Quit', self)
-        qbtn.clicked.connect(self.close)
-        qbtn.resize(qbtn.sizeHint())
+        # 按钮位置
+        btn.move(50, 50)
         qbtn.move(50, 100)
 
-        self.setGeometry(300, 300, 300, 200)
+        # 信号与槽
+        btn.clicked.connect(self.onclick)
+        qbtn.clicked.connect(self.close)
+
         self.resize(250, 150)
         self.center()
-
-        self.statusBar().showMessage('Ready')
-
-        # menubar = self.menuBar()
-        # WorkMenu = menubar.addMenu('&Work')
-        # WorkMenu.addAction(exitAction)
-
         self.setWindowTitle('main widget')
-        self.show()
 
     def center(self):
         qr = self.frameGeometry()  # 获取父类的几何形状
@@ -57,12 +56,21 @@ class Example(QMainWindow):
         else:
             event.ignore()
 
+    def onclick(self):
+        newWindow = MessageBox()
+        newWindow.handle_click(self)
+
+# def showMessageBox():
+#     view = new MyMessageBox(this)
+#     view.main()
+
 
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)
 
     ex = Example()
+    ex.show()
 
     # sys.exit(app.exec_())
     app.exec_()
