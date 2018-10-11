@@ -49,3 +49,7 @@ __excel形式成功后切换为数据库-MySQL__
     3. 每周将所有时间汇总成饼图
     4. 后期获取root权限，手机动作监控(安卓机)如果可行的话
     5. 桌面端和app端口同步
+
+## 学习部分
+
+[PyQt5使用Designer设计UI的两种实现方式](https://blog.csdn.net/chlk118/article/details/72595325)
