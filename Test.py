@@ -18,9 +18,9 @@ class Login(QWidget):
     def slotLogin(self):
         if self.lineEditUser.text() != "admin" or self.lineEditPasswd.text() != "123456":
             self.labelTips.show()
-            self.labelTips.setText("用户名或密码错误！")
+            # self.labelTips.setText("用户名或密码错误！")
         else:
-            self.accept()
+            self.accept()  # 调用主界面，同时进行访客记录
 
     def closeEvent(self, event):  # 关闭QWidget父类时自动调用的函数
         reply = QMessageBox.question(
