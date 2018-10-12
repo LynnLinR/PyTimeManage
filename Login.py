@@ -1,8 +1,8 @@
-import sys
-from PyQt5.QtWidgets import QDialog, QMessageBox
-from PyQt5.uic import loadUi
 
-from PyQt5.QtWidgets import QApplication
+import sys
+
+from PyQt5.QtWidgets import QApplication, QDialog, QMessageBox
+from PyQt5.uic import loadUi
 
 
 class Login(QDialog):
