@@ -52,7 +52,13 @@ __excel形式成功后切换为数据库-MySQL__
 
 ## 学习部分
 
-[PyQt5使用Designer设计UI的两种实现方式](https://blog.csdn.net/chlk118/article/details/72595325)
+- [PyQt5使用Designer设计UI的两种实现方式](https://blog.csdn.net/chlk118/article/details/72595325)
+- 让我纠结下sys.exit(app.exec_())和app.exec_()的区别，为什么第一个会报错 = =
+    > 报错如下, Exception has occurred: SystemExit 0  
+    > ***ps:这个exit(0)在python中不是正常退出的语句莫...***
+    - app.exec_():是QApplication的方法,作用是"进入程序的主循环直到exit()被调用"
+    - 只使用app.exec_()，程序一样可以正常运行，但是关闭窗口后进程却不会退出，尝试print输出app.exec_()的结果，返回0，于是再做修改：
+    - [详细解释](https://stackoverflow.com/questions/25719524/difference-between-sys-exitapp-exec-and-app-exec)
 
 ## 待办事项
 

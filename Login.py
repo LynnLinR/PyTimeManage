@@ -33,11 +33,8 @@ class Login(QDialog):
 
 def main():
     app = QApplication(sys.argv)
-
     ex = Login()
     ex.show()
-
-    # sys.exit(app.exec_())
     app.exec_()
 
 
