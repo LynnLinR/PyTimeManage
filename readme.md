@@ -56,13 +56,14 @@ __excel形式成功后切换为数据库-MySQL__
 
 ## 待办事项
 
-- [ ] PyQt学习
+- [x] PyQt学习-初步实现窗体关系
     - [x] 调用窗体弹出
     - [x] 信号与槽
     - [x] UI界面的调用
     - [x] 父窗体弹出子窗体
-    - [ ] 主界面先隐藏弹出登录窗体
-    - [ ] 登录成功关闭子窗体弹出父窗体
+    - [x] 主界面先隐藏弹出登录窗体
+    - [x] 登录成功关闭子窗体弹出父窗体
+- [ ] 按钮的UI
 - [ ] 计时功能
 - [ ] 初步实现开始计时和结束计时
 - [ ] 到处记录时间段为excel
@@ -78,5 +79,5 @@ __excel形式成功后切换为数据库-MySQL__
     - -w：生成文件为Windows窗体
 
 ```EXE生成代码：
-pyinstaller.exe -F -w --specpath .\outputExe\ --workpath .\outputEXE\ .\Test.py --distpath .\
+pyinstaller.exe -F -w --specpath .\outputExe\ --workpath .\outputEXE\ .\main.py --distpath .\
 ```

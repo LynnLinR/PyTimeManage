@@ -8,7 +8,7 @@
 """
 import sys
 from PyQt5.QtWidgets import *
-from MyMessageBox import MessageBox
+from ChildMessageBox import MessageBox
 
 
 class Example(QWidget):
