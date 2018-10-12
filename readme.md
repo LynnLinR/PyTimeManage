@@ -73,7 +73,10 @@ __excel形式成功后切换为数据库-MySQL__
 ## 项目打包
 
 - EXE生成代码：
+- **注意**
+    - -F：生成单个可执行文件
+    - -w：生成文件为Windows窗体
 
 ```EXE生成代码：
-pyinstaller.exe --specpath .\outputExe\ --workpath .\outputEXE\ .\Test.py --distpath .\
+pyinstaller.exe -F -w --specpath .\outputExe\ --workpath .\outputEXE\ .\Test.py --distpath .\
 ```
