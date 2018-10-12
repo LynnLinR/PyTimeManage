@@ -42,6 +42,7 @@ class MessageBox(QWidget):
 def main():
     app = QApplication(sys.argv)
     ex = MessageBox()
+    ex.show()
     app.exec_()
 
 
